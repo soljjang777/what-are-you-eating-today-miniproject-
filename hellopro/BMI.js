@@ -16,12 +16,12 @@ function call() {
     let bmi = Number(kg.value) / ((Number(cm.value)/100) * ((Number(cm.value)/100)));
     alert('あなたの体質量指数は' + bmi.toFixed(2) + 'となります。')
     if( bmi >= 25.0 ){
-        alert("비만");
+        alert("肥満");
     } else if( bmi >= 23.0 && bmi < 25.0 ){
-        alert("과체중");
+        alert("過体重");
     } else if( bmi >= 18.0 && bmi < 23.0 ){
-        alert("정상");
+        alert("正常");
     } else {
-        alert("저체중");
+        alert("低体重");
     }
 }
